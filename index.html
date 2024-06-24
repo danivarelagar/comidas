@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1>Contador Calorías</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Registrar ingesta calorica</h2>
+                <form id="food-form" class="mb-4">
+                    <div class="form-group">
+                        <label for="food-name">Comida</label>
+                        <input type="text" id="food-name" class="form-control" placeholder="Introduce el nombre de la comida" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="food-calories">Calories</label>
+                        <input type="number" id="food-calories" class="form-control" placeholder="Introduce las calorias que lleva" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block">Añadir</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Historial</h2>
+                <ul id="food-list" class="list-group mb-4"></ul>
+                <button id="clear-all" class="btn btn-danger btn-block">Eliminar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-EdOiqTBP6AVciulVw/UGQ9ds45shhtl9GHG92N6c8UBvjeK2Av7oLqXwLyZ/6bX6" crossorigin="anonymous"></script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+

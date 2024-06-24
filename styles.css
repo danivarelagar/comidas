@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-center h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #333;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item button {
+    margin-left: 10px;
+}
+
+.like-btn {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+
+.dislike-btn {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #343a40;
+    border: none;
+    color: white;
+}
+
+.like {
+    background-color: #d4edda;
+}
+
+.dislike {
+    background-color: #f8d7da;
+}
